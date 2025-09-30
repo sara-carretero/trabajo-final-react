@@ -1,6 +1,10 @@
 const FormLogin = () => {
   return (
-    <h2>Funciona</h2>
+    <form>
+      <label htmlFor="">Contraseña de acceso</label>
+      <input type="password" name="" id="" />
+      <button>Acceder</button>
+    </form>
   )
 }
 

@@ -1,8 +1,11 @@
+import Login from "./pages/Login"
+import Chat from "./pages/Chat"
+
 function App() {
 
   return (
     <>
-      <h1>Proyecto nuevo</h1>
+      <Chat />
     </>
   )
 }

@@ -1,7 +1,7 @@
-const Sidebar = () => {
+const SearchBar = () => {
   return (
-    <h2>Funciona</h2>
+    <input type="search" placeholder="Search..." className="search" />
   )
 }
 
-export default Sidebar
+export default SearchBar

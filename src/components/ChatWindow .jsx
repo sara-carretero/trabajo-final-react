@@ -1,6 +1,14 @@
+import ChatHeader from "./ChatHeader"
+import MessageList from "./MessageList"
+import ChatFooter from "./ChatFooter"
+
 const ChatWindow = () => {
   return (
-    <h2>Funciona</h2>
+    <>
+      <ChatHeader />
+      <MessageList />
+      <ChatFooter />
+    </>
   )
 }
 

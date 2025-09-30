@@ -1,7 +1,13 @@
-const Sidebar = () => {
+import SearchBar from "../components/SearchBar"
+import ChatList from "../components/ChatList"
+
+const SideBar = () => {
   return (
-    <h2>Funciona</h2>
+    <aside>
+      <SearchBar />
+      <ChatList />
+    </aside>
   )
 }
 
-export default Sidebar
+export default SideBar

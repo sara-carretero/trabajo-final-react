@@ -1,6 +1,12 @@
+import SideBar from "../components/SideBar"
+import ChatWindow from "../components/ChatWindow "
+
 const Chat = () => {
   return (
-    <h2>Funciona</h2>
+    <main>
+      <SideBar />
+      <ChatWindow />
+    </main>
   )
 }
 

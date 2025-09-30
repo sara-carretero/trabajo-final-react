@@ -1,7 +1,14 @@
+import FormLogin from "../components/FormLogin"
+
 const Login = () => {
   return (
-    <h2>Funciona</h2>
+    <main>
+      <img src="" alt="" />
+      <h1>Clon de Whatsapp</h1>
+      <FormLogin />
+      <p>Acceso restringido • Contenido privado</p>
+    </main>
   )
 }
 
-export default Chat
+export default Login
