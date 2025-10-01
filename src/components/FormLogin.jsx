@@ -1,10 +1,12 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 const FormLogin = () => {
   //los siguientes son estados:
   const [password, setPassword] = useState()
   const [message, setMessage] = useState()
+  const navigate = useNavigate()
 
 
 
@@ -21,6 +23,9 @@ const FormLogin = () => {
 
     if (password === PASS) {
       setMessage("Contraseña valida, serás redirigido.")
+      setTimeout(() => {
+        navigate("/chat")
+      }, 3000)
     } else {
       console.log("error")
     }
