@@ -17,12 +17,9 @@ const FormLogin = () => {
     setError(null)
 
     if (password === PASS) {
-      setMessage("Contraseña valida, serás redirigido.")
-      setTimeout(() => {
-        navigate("/chat")
-      }, 3000)
+      console.log("contaseña válida")
     } else {
-      setError("Contraseña invalida, intentelo nuevamente")
+      console.log("contaseña inválida")
     }
   }
 
