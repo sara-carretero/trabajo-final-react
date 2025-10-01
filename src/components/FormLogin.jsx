@@ -12,13 +12,26 @@ const FormLogin = () => {
 
   const PASS = "pepe123"
 
+  const validatePassword = () => {
+    setMessage(null)
+    setError(null)
 
+    if (password === PASS) {
+      setMessage("Contraseña valida, serás redirigido.")
+      setTimeout(() => {
+        navigate("/chat")
+      }, 3000)
+    } else {
+      setError("Contraseña invalida, intentelo nuevamente")
+    }
+  }
 
   //manejadorDeEnvio por lo general se lo nombra como handleSubmit
   const manejadorDeEnvio = (e) => {
 
     //e.preventDefault () método para prevenir el comportamiento por defecto que tiene el formulario, es decir, tiene por defecto que cada vez que se envíe, se recarga la página.
     e.preventDefault()
+    validatePassword()
   }
 
   return (
