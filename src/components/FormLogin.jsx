@@ -2,7 +2,10 @@ import { useState } from "react"
 
 
 const FormLogin = () => {
+  //los siguientes son estados:
   const [password, setPassword] = useState()
+  const [message, setMessage] = useState()
+
 
 
   // hook significa anzuelo -> es una funcionalidad que provee react
@@ -17,9 +20,9 @@ const FormLogin = () => {
     setError(null)
 
     if (password === PASS) {
-      console.log("contaseña válida")
+      setMessage("Contraseña valida, serás redirigido.")
     } else {
-      console.log("contaseña inválida")
+      console.log("error")
     }
   }
 
@@ -37,6 +40,7 @@ const FormLogin = () => {
       <label htmlFor="">Contraseña de acceso</label>
       <input type="password" onChange={(event) => setPassword(event.target.value)} />
       <button>Acceder</button>
+      <p>{message}</p>
     </form>
   )
 }
