@@ -46,7 +46,8 @@ const FormLogin = () => {
       <label htmlFor="">Contraseña de acceso</label>
       <input type="password" onChange={(event) => setPassword(event.target.value)} />
       <button>Acceder</button>
-      <p>{message}</p>
+      {message && <p style={{ color: "green" }}>{message}</p>}
+      {error && <p style={{ color: "red" }}>{error}</p>}
     </form>
   )
 }
